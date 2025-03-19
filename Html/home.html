@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/CSS/Home.css">
 </head>
 <body>
-     <p2></p2>
+    <h1 id="head">WELCOME TO QUIZZIE!</h1>
+    <h3 id="test">TEST YOUR KNOWLEDGE</h3>
+    <button id="player" onclick="audio.play();">MUSIC</button>
+    <script>
+        const audio = new Audio();
+        audio.src = "/Audio/main_menu.mp3";
+    </script>
 </body>
 </html>
