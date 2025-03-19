@@ -13,21 +13,37 @@
 
 // If incorrect - flashes red, incorrect 
 // documentGetElementbyID change styling
+//multiple choice question  code 
 function checkAnswer(element, selectedAnswer) {
-    const correctAnswer = "Paris";  // Change this for different questions
+    const correctAnswer = "Paris"; //here is the right answer 
+    const feedback = document.getElementById("feedback");
+    const quizContainer = document.getElementById("quiz");
 
     if (selectedAnswer === correctAnswer) {
-        element.classList.add("correct");
+        element.classList.add("correct"); //causes positive feedback if correct
+        feedback.innerText = "Correct!";
+        feedback.className = "green-text"; 
+
+        //  adds a Fade out and redirect after 1.5 seconds
         setTimeout(() => {
-            element.classList.remove("correct");
-            window.location.href = "next-page.html"; // Redirect to next page
-        }, 2000); // 2-second delay
+            quizContainer.classList.add("fade-out");
+            setTimeout(() => {
+                window.location.href = "next-page.html"; 
+            }, 1500);
+        }, 500);
     } else {
-        element.classList.add("incorrect");
-        setTimeout(() => element.classList.remove("incorrect"), 1000);
+        element.classList.add("incorrect"); //causes negative feedback if answer is incorrect
+        feedback.innerText = "Incorrect!";
+        feedback.className = "red-text";
+
+        // Flash red background
+        quizContainer.classList.add("flash-red");
+        setTimeout(() => {
+            quizContainer.classList.remove("flash-red");
+            element.classList.remove("incorrect");
+        }, 500);
     }
 }
-
 
 //Quiz typewriter functions
 // Splits the text into sentences or phrases
@@ -77,3 +93,5 @@ function typeWriter() {
 setTimeout(() => {
     typeWriter();
 }, 3000); // 3 seconds delay before starting the typing effect
+
+//Sliderbar question 

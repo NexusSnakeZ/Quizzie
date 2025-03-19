@@ -11,13 +11,14 @@
         <h1 id="typewriter"></h1>
     </div>
 
-<div class="quiz-container">
-    <h2 id="question">What is the capital of France?</h2>
-    <div class="option" onclick="checkAnswer(this, 'Paris')">Paris</div>
-    <div class="option" onclick="checkAnswer(this, 'London')">London</div>
-    <div class="option" onclick="checkAnswer(this, 'Berlin')">Berlin</div>
-    <div class="option" onclick="checkAnswer(this, 'Rome')">Rome</div>
-</div>
+    <div class="quiz-container" id="quiz">
+        <h2 id="question">What is the capital of France?</h2>
+        <div class="option" onclick="checkAnswer(this, 'Paris')">Paris</div>
+        <div class="option" onclick="checkAnswer(this, 'London')">London</div>
+        <div class="option" onclick="checkAnswer(this, 'Berlin')">Berlin</div>
+        <div class="option" onclick="checkAnswer(this, 'Rome')">Rome</div>
+        <div id="feedback"></div>  <!-- Message appears here -->
+    </div>
     <script src="../../JS/QuizLogic.Js"></script>
 </body>
 </html>
