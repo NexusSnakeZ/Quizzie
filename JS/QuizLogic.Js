@@ -13,17 +13,18 @@
 
 // If incorrect - flashes red, incorrect 
 // documentGetElementbyID change styling
+//multiple choice question  code 
 function checkAnswer(element, selectedAnswer) {
-    const correctAnswer = "Paris";  
+    const correctAnswer = "Paris"; //here is the right answer 
     const feedback = document.getElementById("feedback");
     const quizContainer = document.getElementById("quiz");
 
     if (selectedAnswer === correctAnswer) {
-        element.classList.add("correct");
+        element.classList.add("correct"); //causes positive feedback if correct
         feedback.innerText = "Correct!";
         feedback.className = "green-text"; 
 
-        // Fade out and redirect after 1.5 seconds
+        //  adds a Fade out and redirect after 1.5 seconds
         setTimeout(() => {
             quizContainer.classList.add("fade-out");
             setTimeout(() => {
@@ -31,7 +32,7 @@ function checkAnswer(element, selectedAnswer) {
             }, 1500);
         }, 500);
     } else {
-        element.classList.add("incorrect");
+        element.classList.add("incorrect"); //causes negative feedback if answer is incorrect
         feedback.innerText = "Incorrect!";
         feedback.className = "red-text";
 
@@ -93,3 +94,4 @@ setTimeout(() => {
     typeWriter();
 }, 3000); // 3 seconds delay before starting the typing effect
 
+//Sliderbar question 
