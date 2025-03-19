@@ -13,6 +13,20 @@
 
 // If incorrect - flashes red, incorrect 
 // documentGetElementbyID change styling
+function checkAnswer(element, selectedAnswer) {
+    const correctAnswer = "Paris";  // Change this for different questions
+
+    if (selectedAnswer === correctAnswer) {
+        element.classList.add("correct");
+        setTimeout(() => {
+            element.classList.remove("correct");
+            window.location.href = "next-page.html"; // Redirect to next page
+        }, 2000); // 2-second delay
+    } else {
+        element.classList.add("incorrect");
+        setTimeout(() => element.classList.remove("incorrect"), 1000);
+    }
+}
 
 
 //Quiz typewriter functions
