@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 60%;
+    margin:24% auto;
+    position: relative;
+}
+#slider{
+    width: 100%;
+    height: 7px;
+    outline:none;
+    border-radius: 2px;
+}
+
+#slider::-webkit-slider-thumb{
+    width: 48px;
+    cursor: pointer;
+    z-index: 3;
+    position: relative
+}
