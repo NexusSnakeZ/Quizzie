@@ -14,20 +14,35 @@
 // If incorrect - flashes red, incorrect 
 // documentGetElementbyID change styling
 function checkAnswer(element, selectedAnswer) {
-    const correctAnswer = "Paris";  // Change this for different questions
+    const correctAnswer = "Paris";  
+    const feedback = document.getElementById("feedback");
+    const quizContainer = document.getElementById("quiz");
 
     if (selectedAnswer === correctAnswer) {
         element.classList.add("correct");
+        feedback.innerText = "Correct!";
+        feedback.className = "green-text"; 
+
+        // Fade out and redirect after 1.5 seconds
         setTimeout(() => {
-            element.classList.remove("correct");
-            window.location.href = "next-page.html"; // Redirect to next page
-        }, 2000); // 2-second delay
+            quizContainer.classList.add("fade-out");
+            setTimeout(() => {
+                window.location.href = "next-page.html"; 
+            }, 1500);
+        }, 500);
     } else {
         element.classList.add("incorrect");
-        setTimeout(() => element.classList.remove("incorrect"), 1000);
+        feedback.innerText = "Incorrect!";
+        feedback.className = "red-text";
+
+        // Flash red background
+        quizContainer.classList.add("flash-red");
+        setTimeout(() => {
+            quizContainer.classList.remove("flash-red");
+            element.classList.remove("incorrect");
+        }, 500);
     }
 }
-
 
 //Quiz typewriter functions
 // Splits the text into sentences or phrases
@@ -77,3 +92,4 @@ function typeWriter() {
 setTimeout(() => {
     typeWriter();
 }, 3000); // 3 seconds delay before starting the typing effect
+

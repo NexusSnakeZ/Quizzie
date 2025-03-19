@@ -3,6 +3,7 @@
     width: 300px;
     margin: 50px auto;
     text-align: center;
+    transition: opacity 1.5s ease-in-out;
 }
 .option {
     display: block;
@@ -17,4 +18,25 @@
 }
 .incorrect {
     background-color: lightcoral;
+}
+.fade-out {
+    opacity: 0;
+}
+.flash-red {
+    animation: flash 0.5s;
+}
+@keyframes flash {
+    0% { background-color: lightcoral; }
+    100% { background-color: white; }
+}
+#feedback {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.green-text {
+    color: green;
+}
+.red-text {
+    color: red;
 }
