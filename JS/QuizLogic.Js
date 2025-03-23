@@ -106,3 +106,23 @@ setTimeout(() => {
     selector.style.left = this.value + "%";
  }
 
+//open question 
+
+document.getElementById("checkButton").addEventListener("click", function () {
+    // Predefined correct answer
+    const correctAnswer = "Paris";
+  
+    // Get the user's answer
+    const userAnswer = document.getElementById("userAnswer").value.trim();
+  
+    // Check if the user's answer matches the correct answer
+    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+      document.getElementById("result").textContent = "Correct! ";
+      document.getElementById("result").style.color = "green";
+    } else {
+      document.getElementById("result").textContent = "Incorrect. Try again! ";
+      document.getElementById("result").style.color = "red";
+    }
+  });
+
+

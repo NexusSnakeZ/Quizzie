@@ -6,6 +6,7 @@
     <title>Locked_IN</title>
     <link rel="stylesheet" href="../../CSS/Multiplechoice.css">
     <link rel="stylesheet" href="../../CSS/Slider.css"
+    <link rel="stylesheet" href="../../CSS/Openanswer.css"
 </head>
 <body>
     <div id="Welcoming-Message">
@@ -26,6 +27,14 @@
         <div id="selector"></div>
             <div class="SelectBtn"></div>
     </div>
+    
+    <div class="questioncontainer">
+        <h1>Open question</h1>
+        <p>Question: What is the capital of France?</p>
+        <textarea id="userAnswer" placeholder="Type your answer here..."></textarea>
+        <button id="checkButton">Check Answer</button>
+        <p id="result"></p>
+      </div>
 
     <script src="../../JS/QuizLogic.Js"></script>
 </body>
