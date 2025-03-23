@@ -95,3 +95,14 @@ setTimeout(() => {
 }, 3000); // 3 seconds delay before starting the typing effect
 
 //Sliderbar question 
+
+ var slider = document.getElementById("slider");
+ var selector = document.getElementById("selector");
+ var SelectValue =document.getElementById("SelectValue");
+
+ SelectValue.innerHTML = slider.value;
+
+ slider.oninput = function(){
+    selector.style.left = this.value + "%";
+ }
+
