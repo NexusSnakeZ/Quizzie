@@ -1,27 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-main{
+
+main {
     width: 60%;
-    margin:24% auto;
+    margin: 24% auto;
     position: relative;
 }
-#Sliderquestion{
-    width: 60%;
+
+#Sliderquestion {
+    width: 100%;
     height: 7px;
-    outline:none;
+    outline: none;
     border-radius: 2px;
+    background: #ddd;
 }
 
-#sliderquestion::-webkit-slider-thumb{
+#Sliderquestion::-webkit-slider-thumb {
     width: 48px;
+    height: 48px;
+    -webkit-appearance: none;
     cursor: pointer;
     z-index: 3;
-    position: relative
+    position: relative;
+    opacity: 0; /* Hide the default thumb */
 }
 
-#selector{
+#selector {
     height: 104px;
     width: 48px;
     position: absolute;
@@ -30,10 +37,11 @@ main{
     transform: translateX(-50%);
     z-index: 2;
 }
-.SelectBtn{
+
+.SelectBtn {
     height: 48px;
     width: 48px;
-    background-image: url(icon.png);
+    background-color: #ffd200; 
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -41,7 +49,7 @@ main{
     bottom: 0;
 }
 
-#SelectValue{
+#SelectValue {
     width: 48px;
     height: 40px;
     position: absolute;
@@ -49,17 +57,27 @@ main{
     background: #ffd200;
     border-radius: 4px;
     text-align: center;
-    line-height: 45px;
+    line-height: 40px;
     font-size: 20px;
     font-weight: bold;
 }
-#SelectValue::after{
+
+#SelectValue::after {
     content: '';
     border-top: 17px solid #ffd200;
-    border-left: 24px; solid: #000; 
-    border-right: 24px; solid: #000; 
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
     position: absolute;
-    bottom: -14px;
+    bottom: -17px;
     left: 0;
 }
 
+#submitBtn {
+    margin-top: 60px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
