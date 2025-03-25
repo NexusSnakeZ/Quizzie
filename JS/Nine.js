@@ -1,5 +1,5 @@
 function checkAnswer(element, selectedAnswer) {
-    const correctAnswer = "195"; //here is the right answer 
+    const correctAnswer = "2"; //here is the right answer 
     const feedback = document.getElementById("feedback");
     const quizContainer = document.getElementById("quiz");
 
@@ -12,7 +12,7 @@ function checkAnswer(element, selectedAnswer) {
         setTimeout(() => {
             quizContainer.classList.add("fade-out");
             setTimeout(() => {
-                window.location.href = "Four.html"; 
+                window.location.href = "Ten.html"; 
             }, 1500);
         }, 500);
     } else {
