@@ -9,14 +9,28 @@ body{
     top: 5%;
     left: 2%;
 }
+@font-face {
+    font-family: "old";
+    src: url(/Media/ElizabethCn-axrK.ttf);
+  }
+  @font-face {
+    font-family: "Writing";
+    src: url(/Media/DemoashenfordScript-BLOAB.otf);
+  }
 .quiz-container {
-    font-family: Arial, sans-serif;
     width: 300px;
     margin: 50px auto;
     text-align: center;
     transition: opacity 1.5s ease-in-out;
     color: #b19d06;
 }
+
+h2{
+    font-family: "writing";
+    font-size: xx-large;
+}
+  
+
 .option {
     display: block;
     padding: 10px;
@@ -24,6 +38,7 @@ body{
     cursor: pointer;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-family: "old";
 }
 .correct {
     background-color: lightgreen;

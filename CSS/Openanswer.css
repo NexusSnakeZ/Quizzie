@@ -1,10 +1,37 @@
+@font-face {
+  font-family: "old";
+  src: url(/Media/ElizabethCn-axrK.ttf);
+}
+@font-face {
+  font-family: "Writing";
+  src: url(/Media/DemoashenfordScript-BLOAB.otf);
+}
+
 .quiz-container {
-  font-family: Arial, sans-serif;
+  font-family: "Writing";
   width: 300px;
   margin: 50px auto;
   text-align: center;
   transition: opacity 1.5s ease-in-out;
+  font-size: xx-large;
 }
+#question{
+  color: #b19d06;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+}
+#answerInput{
+  color:#b19d06;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: black;
+  font-family: "old"
+}
+
+.button{
+  border-radius: 5px;
+  background-color: #b19d06;
+}
+
 .fade-out {
   opacity: 0;
 }
@@ -16,7 +43,7 @@
   100% { background-color: white; }
 }
 #feedback {
-  font-size: 18px;
+  font-size: 26px;
   margin-top: 10px;
   font-weight: bold;
 }
