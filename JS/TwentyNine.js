@@ -1,5 +1,5 @@
 function checkAnswer(element, selectedAnswer) {
-    const correctAnswer = "Mongols"; //here is the right answer 
+    const correctAnswer = "Africa"; //here is the right answer 
     const feedback = document.getElementById("feedback");
     const quizContainer = document.getElementById("quiz");
 
