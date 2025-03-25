@@ -26,3 +26,10 @@
 .red-text {
   color: red;
 }
+
+
+body{
+  background-image: url(../Media/Backgroundplaceholder.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
