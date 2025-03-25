@@ -56,8 +56,8 @@ main{
 #SelectValue::after{
     content: '';
     border-top: 17px solid #ffd200;
-    border-left: 24px; solid #000;
-    border-right: 24px; solid #000;
+    border-left: 24px; solid: #000; 
+    border-right: 24px; solid: #000; 
     position: absolute;
     bottom: -14px;
     left: 0;
