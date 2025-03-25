@@ -138,21 +138,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //open question 
 
-document.getElementById("checkButton").addEventListener("click", function () {
-    // Predefined correct answer
-    const correctAnswer = "Paris";
-  
-    // Get the user's answer
-    const userAnswer = document.getElementById("userAnswer").value.trim();
-  
-    // Check if the user's answer matches the correct answer
-    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
-      document.getElementById("result").textContent = "Correct! ";
-      document.getElementById("result").style.color = "green";
-    } else {
-      document.getElementById("result").textContent = "Incorrect. Try again! ";
-      document.getElementById("result").style.color = "red";
-    }
-  });
+function checkAnswer() {
+    const correctAnswer = "Paris";  // Exact answer required
+    const userAnswer = document.getElementById("answerInput").value;
+    const feedback = document.getElementById("feedback");
+    const quizContainer = document.getElementById("quiz");
 
+    if (userAnswer === correctAnswer) {
+        feedback.innerText = "Correct!";
+        feedback.className = "green-text";
+
+        // Fade out and redirect after 1.5 seconds
+        setTimeout(() => {
+            quizContainer.classList.add("fade-out");
+            setTimeout(() => {
+                window.location.href = "next-page.html"; 
+            }, 1500);
+        }, 500);
+    } else {
+        feedback.innerText = "Incorrect!";
+        feedback.className = "red-text";
+
+        // Flash red background
+        quizContainer.classList.add("flash-red");
+        setTimeout(() => quizContainer.classList.remove("flash-red"), 500);
+    }
+}
 

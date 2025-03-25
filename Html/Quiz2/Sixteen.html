@@ -1,9 +1,19 @@
-<div class="SliderMain"> 
-    <input type="range" name="Slider" id="Sliderquestion" min="0" max="100" value="50">
-    <div id="selector">
-        <div id="SelectValue">50</div>
-        <div class="SelectBtn"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+    <link rel="Slider" href="../../CSS/Openanswer.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <h2 id="question">What is the capital of France?</h2>
+        <input type="text" id="answerInput" placeholder="Type your answer..." autocomplete="off">
+        <button onclick="checkAnswer()">Submit</button>
+        <div id="feedback"></div>  <!-- Message appears here -->
     </div>
-</div>
 
-<button id="submitBtn">Submit Answer</button>
+<script src="../../JS/Sixteen.js"></script>
+</body>
+</html>
