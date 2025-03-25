@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locked_IN</title>
+    <link rel="stylesheet" href="../../CSS/Multiplechoice.css">
+    <link rel="stylesheet" href="../../CSS/Slider.css"
+    <link rel="stylesheet" href="../../CSS/Openanswer.css"
+</head>
+<body>
+        <!--Welcome message-->
+    <div id="Welcoming-Message">
+        <h1 id="typewriter"></h1>
+    </div>
+        <!--Multiple answer question-->
+    <div class="quiz-container" id="quiz">
+        <h2 id="question">What is the capital of France?</h2>
+        <div class="option" onclick="checkAnswer(this, 'Paris')">Paris</div>
+        <div class="option" onclick="checkAnswer(this, 'London')">London</div>
+        <div class="option" onclick="checkAnswer(this, 'Berlin')">Berlin</div>
+        <div class="option" onclick="checkAnswer(this, 'Rome')">Rome</div>
+        <div id="feedback"></div>  <!-- Message appears here -->
+    </div>
+
+       <!--Sliderquestion--> 
+       
+    <div class="SliderMain"> 
+        <input type="range" name="Slider" id="Sliderquestion" min="0" max="100" value="50">
+        <div id="selector">
+            <div id="SelectValue">50</div>
+            <div class="SelectBtn"></div>
+        </div>
+    </div>
+    
+    <button id="submitBtn">Submit Answer</button>
+
+        <!--Open Question-->
+    
+    <div class="questioncontainer">
+        <h1>Open question</h1>
+        <p>Question: What is the capital of France?</p>
+        <textarea id="userAnswer" placeholder="Type your answer here..."></textarea>
+        <button id="checkButton">Check Answer</button>
+        <p id="result"></p>
+      </div>
+
+    <script src="../../JS/QuizLogic.Js"></script>
+</body>
+</html>
