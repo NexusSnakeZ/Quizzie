@@ -12,7 +12,7 @@ function checkAnswer(element, selectedAnswer) {
         setTimeout(() => {
             quizContainer.classList.add("fade-out");
             setTimeout(() => {
-                window.location.href = "Home.html"; 
+                window.location.href = "WIN.html"; 
             }, 1500);
         }, 500);
     } else {
