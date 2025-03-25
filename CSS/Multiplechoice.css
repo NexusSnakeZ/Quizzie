@@ -15,7 +15,7 @@ body{
     margin: 50px auto;
     text-align: center;
     transition: opacity 1.5s ease-in-out;
-    color: aliceblue;
+    color: #b19d06;
 }
 .option {
     display: block;
