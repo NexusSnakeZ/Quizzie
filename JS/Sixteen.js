@@ -1,5 +1,5 @@
 function checkAnswer() {
-    const correctAnswer = "Paris";  // Exact answer required
+    const correctAnswer = "Rotterdam";  // Exact answer required
     const userAnswer = document.getElementById("answerInput").value;
     const feedback = document.getElementById("feedback");
     const quizContainer = document.getElementById("quiz");
@@ -12,7 +12,7 @@ function checkAnswer() {
         setTimeout(() => {
             quizContainer.classList.add("fade-out");
             setTimeout(() => {
-                window.location.href = "next-page.html"; 
+                window.location.href = "Seventeen.html"; 
             }, 1500);
         }, 500);
     } else {

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question 17</title>
-    <link rel="stylesheet" href="../../CSS/Slider.css"
+    <link rel="stylesheet" href="../../CSS/Openanswer.css">
 </head>
 <body>
-    <div class="SliderMain"> 
-        <input type="range" name="Slider" id="Sliderquestion" min="0" max="100" value="50">
-        <div id="selector">
-            <div id="SelectValue">50</div>
-            <div class="SelectBtn"></div>
-        </div>
+    <div class="quiz-container" id="quiz">
+        <h2 id="question">What are the three largest continents by land area? (in order of largest to smallest)</h2>
+        <input type="text" id="answerInput" placeholder="Type your answer..." autocomplete="off">
+        <button onclick="checkAnswer()">Submit</button>
+        <div id="feedback"></div>  <!-- Message appears here -->
     </div>
+
 </body>
 </html>
