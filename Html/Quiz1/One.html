@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Quiz</title>
+    <link rel="stylesheet" href="/CSS/Multiplechoice.css">
 </head>
 <body>
-    
+    <div class="quiz-container" id="quiz">
+        <h2 id="question">When did Columbus discover America? </h2>
+        <div class="option" onclick="checkAnswer(this, 'September 22, 1310')">September 22, 1310</div>
+        <div class="option" onclick="checkAnswer(this, 'October 12, 1492')">October 12, 1492</div>
+        <div class="option" onclick="checkAnswer(this, 'May 4, 1264')">May 4, 1264</div>
+        <div class="option" onclick="checkAnswer(this, 'July 30, 1437')">July 30, 1437</div>
+        <div id="feedback"></div>  <!-- Message appears here -->
+    </div>
+    <img id="logo" src="/Media/logo.png">
+    <script src="/JS/One.js"></script>
 </body>
 </html>
