@@ -6,7 +6,12 @@
   font-family: "Writing";
   src: url(/Media/DemoashenfordScript-BLOAB.otf);
 }
-
+#logo{
+  width: 200px;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
 .quiz-container {
   font-family: "Writing";
   width: 300px;
