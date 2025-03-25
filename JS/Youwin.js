@@ -1,10 +1,23 @@
 function restartQuiz() {
-    window.location.href = "SecondQuiz.html"; 
+    playSound(); // Play the sound first
+    setTimeout(() => {
+        window.location.href = "../../Html/Quiz2/SecondQuiz.html"; 
+    }, 1000); // Adjust time (milliseconds) based on sound length
 }
 
 function goToMainMenu() {
-    window.location.href = "home.html";
+    playSound(); // Play the sound first
+    setTimeout(() => {
+        window.location.href = "home.html";
+    }, 1000); // Adjust delay to match sound duration
 }
+
+function playSound() {
+    const sound = document.getElementById("buttonSound");
+    sound.currentTime = 0; // Reset audio to start
+    sound.play(); // Play sound
+}
+
 
 const canvas = document.getElementById('confetti');
 const ctx = canvas.getContext('2d');

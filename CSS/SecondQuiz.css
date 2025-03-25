@@ -1,0 +1,52 @@
+body{
+    background-image: url(../Media/Backgroundplaceholder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Writing";
+    src: url(/Media/DemoashenfordScript-BLOAB.otf);
+  }
+
+#Welcoming-Message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color:  #ffd200;
+    text-shadow: black 1px 2px 1px;
+    font-family: "Writing";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Typewriter effect */
+#typewriter::after {
+    content: '|';
+    animation: blink 0.8s infinite alternate;
+}
+
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#nextButton {
+    display: none; /* Initially hidden */
+    padding: 15px 30px;
+    font-size: 33px;
+    font-weight: bold;
+    color: white;
+    background: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: "Writing";
+}
+
+#nextButton:hover {
+    background: #ffe01a;
+}

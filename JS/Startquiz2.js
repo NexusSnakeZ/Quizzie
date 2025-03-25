@@ -1,48 +1,61 @@
-//Quiz typewriter functions
-// Splits the text into sentences or phrases
 const sentences = [
     "Welcome to the final part of the quiz!",
     "You ready for the final challenge?",
-    "If you are click the button to continue!"
+    "If you are, click the button to continue!"
 ];
 
-const speed = 80; // Typing speed in milliseconds
-const delayBetweenSentences = 1000; // Delay between sentences (in ms)
-const deleteSpeed = 50; // Speed at which text is deleted
+const speed = 80;
+const delayBetweenSentences = 1000;
+const deleteSpeed = 50;
 let sentenceIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 
 function typeWriter() {
+    const typewriterElement = document.getElementById("typewriter");
     const currentSentence = sentences[sentenceIndex];
 
-    // If not deleting, type the sentence
     if (!isDeleting) {
         if (charIndex < currentSentence.length) {
-            document.getElementById("typewriter").textContent += currentSentence.charAt(charIndex);
+            typewriterElement.textContent += currentSentence.charAt(charIndex);
             charIndex++;
-            setTimeout(typeWriter, speed); // Continue typing the next character
+            setTimeout(typeWriter, speed);
         } else {
-            // Once the sentence is typed, start deleting after a short delay
             isDeleting = true;
-            setTimeout(typeWriter, delayBetweenSentences); // Delay before starting deletion
+            setTimeout(typeWriter, delayBetweenSentences);
         }
     } else {
-        // If deleting, remove one character at a time
         if (charIndex > 0) {
-            document.getElementById("typewriter").textContent = currentSentence.substring(0, charIndex - 1);
+            typewriterElement.textContent = currentSentence.substring(0, charIndex - 1);
             charIndex--;
-            setTimeout(typeWriter, deleteSpeed); // Continue deleting the next character
+            setTimeout(typeWriter, deleteSpeed);
         } else {
-            // Once the sentence is fully deleted, move to the next sentence
             isDeleting = false;
             sentenceIndex++;
-            setTimeout(typeWriter, delayBetweenSentences); // Delay before typing the next sentence
+
+            if (sentenceIndex < sentences.length) {
+                setTimeout(typeWriter, delayBetweenSentences);
+            } else {
+                document.getElementById("nextButton").style.display = "block"; // Show button
+                document.getElementById("nextButton").style.opacity = "1";
+            }
         }
     }
 }
 
-// Start typing after a 3-second delay
+function nextPage() {
+    const sound = document.getElementById("clickSound");
+    sound.play(); // Play button click sound
+    document.body.style.opacity = "0"; // Fade out effect
+    setTimeout(() => {
+        window.location.href = "nextpage.html"; // Redirect after fade
+    }, 4000); // Now waits 4 seconds before redirecting
+}
+
+
+// Ensure the page starts fully visible
+document.body.style.opacity = "1";
+
 setTimeout(() => {
     typeWriter();
-}, 3000); // 3 seconds delay before starting the typing effect
+}, 3000);
