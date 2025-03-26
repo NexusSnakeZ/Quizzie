@@ -8,18 +8,34 @@ body{
     position: absolute;
     top: 5%;
     left: 2%;
+    border: #b19d06 5px;
+    box-shadow: #b19d06 5px 5px 5px;
 }
+@font-face {
+    font-family: "Writing";
+    src: url(/Media/DemoashenfordScript-BLOAB.otf);
+  }
+
+  @font-face {
+    font-family: "old";
+    src: url(/Media/ElizabethCn-axrK.ttf);
+  }
 #head{
     position: absolute;
     top: 3%;
-    right: 37%;
-    color: azure;
+    right: 43%;
+    color: #b19d06;
+    text-shadow: rgb(255, 251, 251) 2px 1px 1px;
+    font-family: "old";
 }
 #test{
     position: absolute;
     top: 15%;
-    right:42%;
-    color: azure;
+    right:47%;
+    color: #b19d06;
+    font-family: "old";
+    text-shadow: rgb(255, 251, 251) 2px 1px 1px;
+    background-color: black;
 }
 #level1{
     position: absolute;
