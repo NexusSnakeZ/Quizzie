@@ -1,5 +1,5 @@
 function checkAnswer() {
-    const correctAnswer = "Economie, Trade, Power, Culture and Religion";  // Exact answer required
+    const correctAnswer = "Economy, Trade, Power, Culture and Religion";  // Exact answer required
     const userAnswer = document.getElementById("answerInput").value;
     const feedback = document.getElementById("feedback");
     const quizContainer = document.getElementById("quiz");
