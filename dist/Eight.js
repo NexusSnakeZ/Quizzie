@@ -1,25 +1,24 @@
+"use strict";
 function checkAnswer(element, selectedAnswer) {
     const correctAnswer = "Temperate zone"; //here is the right answer 
     const feedback = document.getElementById("feedback");
     const quizContainer = document.getElementById("quiz");
-
     if (selectedAnswer === correctAnswer) {
         element.classList.add("correct"); //causes positive feedback if correct
         feedback.innerText = "Correct!";
-        feedback.className = "green-text"; 
-
+        feedback.className = "green-text";
         //  adds a Fade out and redirect after 1.5 seconds
         setTimeout(() => {
             quizContainer.classList.add("fade-out");
             setTimeout(() => {
-                window.location.href = "Nine.html"; 
+                window.location.href = "Nine.html";
             }, 1500);
         }, 500);
-    } else {
+    }
+    else {
         element.classList.add("incorrect"); //causes negative feedback if answer is incorrect
         feedback.innerText = "Incorrect!";
         feedback.className = "red-text";
-
         // Flash red background
         quizContainer.classList.add("flash-red");
         setTimeout(() => {
