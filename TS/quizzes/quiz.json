@@ -1,0 +1,178 @@
+{
+  "title": "General Knowledge Quiz",
+  "introduction": {
+    "title": "Welcome to the General Knowledge Quiz!",
+    "text": "Test your knowledge across history, geography, and science. Answer all 30 questions to complete the quiz. Good luck!"
+  },
+  "questions": [
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "When did Columbus discover America?",
+      "answers": ["October 12, 1492", "July 4, 1776", "August 3, 1492", "March 15, 1493"],
+      "correctAnswer": "October 12, 1492"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "How many days did Columbus's voyage take?",
+      "answers": ["3 days", "5 days", "10 days", "15 days"],
+      "correctAnswer": "5 days"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "How many countries are there in the world?",
+      "answers": ["150", "175", "195", "220"],
+      "correctAnswer": "195"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Which is the tallest mountain in the world?",
+      "answers": ["K2", "Everest", "Kilimanjaro", "Denali"],
+      "correctAnswer": "Everest"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Which country has the largest population?",
+      "answers": ["China", "India", "USA", "Indonesia"],
+      "correctAnswer": "India"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "How many continents are there?",
+      "answers": ["5", "6", "7", "8"],
+      "correctAnswer": "7"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "How many oceans are there?",
+      "answers": ["3", "4", "5", "7"],
+      "correctAnswer": "5"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "In which climate zone do most humans live?",
+      "answers": ["Tropical zone", "Polar zone", "Temperate zone", "Arid zone"],
+      "correctAnswer": "Temperate zone"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "How many moons does Mars have?",
+      "answers": ["0", "1", "2", "3"],
+      "correctAnswer": "2"
+    },
+    {
+      "type": "OPEN",
+      "question": "Name the five factors that influence the development of civilizations (Economy, Trade, Power, Culture and Religion):",
+      "correctAnswer": ["Economy, Trade, Power, Culture and Religion"]
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Which are the 4 largest countries by area?",
+      "answers": ["USA, Russia, China, Canada", "Russia,Canada,China,USA", "Canada, USA, China, Russia", "China, Russia, USA, Canada"],
+      "correctAnswer": "Russia,Canada,China,USA"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "What percentage of Earth's surface is covered by water?",
+      "answers": ["61%", "71%", "81%", "51%"],
+      "correctAnswer": "71"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "How many elements are in the periodic table?",
+      "answers": ["96", "106", "116", "126"],
+      "correctAnswer": "116"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Which is the smallest country in Europe?",
+      "answers": ["Monaco", "Luxemburg", "Malta", "Andorra"],
+      "correctAnswer": "Luxemburg"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "What percentage of the world's oxygen is produced by the ocean?",
+      "answers": ["25%", "40%", "50%", "70%"],
+      "correctAnswer": "50"
+    },
+    {
+      "type": "OPEN",
+      "question": "What is the largest port in Europe (by cargo)?",
+      "correctAnswer": ["Rotterdam"]
+    },
+    {
+      "type": "OPEN",
+      "question": "Name the three continents where Islam is primarily practiced (Asia Africa North America):",
+      "correctAnswer": ["Asia Africa North America"]
+    },
+    {
+      "type": "OPEN",
+      "question": "How long did the Reconquista last?",
+      "correctAnswer": ["781 years"]
+    },
+    {
+      "type": "OPEN",
+      "question": "Which is the smallest country in the world?",
+      "correctAnswer": ["Vatican City"]
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Which is the longest river in the world?",
+      "answers": ["Amazon", "Nile River", "Yangtze", "Mississippi"],
+      "correctAnswer": "Nile River"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Who discovered America?",
+      "answers": ["Amerigo Vespucci", "Christopher Columbus", "Leif Erikson", "Ferdinand Magellan"],
+      "correctAnswer": "Christopher Columbus"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "What was the primary reason for the Silk Road trade?",
+      "answers": ["Military conquest", "Religious expansion", "Trade and commerce", "Political alliances"],
+      "correctAnswer": "Trade and commerce"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Which empire conquered the largest territory?",
+      "answers": ["Roman Empire", "Ottoman Empire", "Mongols", "British Empire"],
+      "correctAnswer": "Mongols"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Which civilization is considered the most advanced of the Americas?",
+      "answers": ["Aztec", "Maya", "Inca", "Pueblo"],
+      "correctAnswer": "Inca"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "What ended the religious conflicts in Europe?",
+      "answers": ["Treaty of Utrecht", "Peace of Westphalia", "Treaty of Paris", "Congress of Vienna"],
+      "correctAnswer": "Peace of Westphalia"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "What is the deepest point in the ocean?",
+      "answers": ["Challenger Deep", "Tonga Trench", "Mariana Trench", "Kuril-Kamchatka Trench"],
+      "correctAnswer": "Mariana Trench"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Which empire lasted the longest?",
+      "answers": ["Roman Empire", "Ottoman Empire", "Byzantine Empire", "Mongol Empire"],
+      "correctAnswer": "Byzantine Empire"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Which continent has the most countries?",
+      "answers": ["Asia", "Europe", "Africa", "Americas"],
+      "correctAnswer": "Africa"
+    },
+    {
+      "type": "MULTIPLECHOICE",
+      "question": "Who invented writing?",
+      "answers": ["Egyptians", "Greeks", "Sumerians", "Chinese"],
+      "correctAnswer": "Sumerians"
+    }
+  ]
+}
